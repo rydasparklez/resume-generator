@@ -1,0 +1,47 @@
+.card{
+    flex: 1 1 300px;
+    position:relative;
+    background-color: hsl(var(--bkg));
+    box-shadow: 2px 2px 40px hsl(var(--muted)/.9);
+    padding: var(--space-lg);
+    border-radius: var(--round-lg);
+    border-top: .1em solid white;
+    border-left: .1em solid white;
+    max-width: var(--content);
+    width: 100%;         /* or your preferred width */
+    min-height: 600px;    /* adjust based on your largest content */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+      align-items: stretch;
+
+}
+
+.title {
+  font-size: 40px; /* Change this value as needed */
+  font-weight: bold;
+  /* You can add more styles if you want */
+}
+
+.description {
+margin-top: 20x;
+}
+.accentImage {
+  display: block;
+  max-width: 300px; /* 3x bigger */
+  width: 100%;
+  height: auto;
+  margin-left: 140px; /* move to the right */
+  margin-bottom: 35px;
+}
+
+@media (max-width: 900px) {
+  .accentImage {
+    display: none;
+  }
+}
+.stepThree {
+  text-align: left;
+  width: 100%;
+}
